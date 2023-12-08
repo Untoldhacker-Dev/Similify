@@ -6,6 +6,36 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Untoldhacker-Dev/Similify.git"
+  },
+  "keywords": [
+    "similarity",
+    "comparison",
+    "matching",
+    "analyze",
+    "compare",
+    "similarity percentage",
+    "string similarity",
+    "object similarity",
+    "array similarity",
+    "threshold",
+    "fuzzy matching",
+    "string matching",
+    "pattern matching",
+    "similarity analysis",
+    "text matching",
+    "data comparison",
+    "match percentage",
+    "versatile similarity",
+    "easy comparison",
+    "smart matching"
+  ],
+  "author": "Aditya Pandey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Untoldhacker-Dev/Similify/issues"
+  },
+  "homepage": "https://github.com/Untoldhacker-Dev/Similify#readme"
 }
