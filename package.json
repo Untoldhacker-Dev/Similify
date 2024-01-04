@@ -1,6 +1,6 @@
 {
   "name": "similify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"Similify is a versatile JavaScript package designed to simplify and enhance similarity comparisons in various contexts. Whether you're comparing words, objects, arrays, or exploring string lengths and numerical ranges, Similify provides an easy-to-use interface with customizable thresholds. Effortlessly find the most similar instances and match percentages, making complex comparisons a breeze. Streamline your similarity analysis and unlock new possibilities with Similify.\"",
   "main": "index.js",
   "scripts": {
