@@ -25,11 +25,9 @@ Require Similify in your JavaScript file and start using its functions:
 const { compareWords } = require('similify');
 
 // Example usage with default threshold (70)
-console.log(compareWords("apple", "orange"));
-
-// Example usage with custom threshold
-const customThreshold = 80;
-console.log(compareWords("apple", "orange", customThreshold));
+const result = compareWords("apple", "orange");
+console.log(result);
+// Output: { mostSimilar: 'orange', matchPercentage: 71.43 }  
 ```
 
 ### Word to Object in Array Comparison
@@ -39,7 +37,9 @@ const { wordToObjectArrayComparison } = require('similify');
 
 const objectsArray = [{ name: "banana" }, { name: "orange" }];
 
-console.log(wordToObjectArrayComparison("apple", objectsArray, "name"));
+const result = wordToObjectArrayComparison("apple", objectsArray, "name");
+console.log(result);
+// Output: { mostSimilar: 'orange', matchPercentage: 71.43 }  
 ```
 
 ### Compare Objects
@@ -48,11 +48,9 @@ console.log(wordToObjectArrayComparison("apple", objectsArray, "name"));
 const { compareObjects } = require('similify');
 
 // Example usage with default threshold (70)
-console.log(compareObjects({ a: 1, b: 2 }, { a: 1, b: 3 }));
-
-// Example usage with custom threshold
-const customThreshold = 80;
-console.log(compareObjects({ a: 1, b: 2 }, { a: 1, b: 3 }, customThreshold));
+const result = compareObjects({ a: 1, b: 2 }, { a: 1, b: 3 });
+console.log(result);
+// Output: { mostSimilar: '{"a":1,"b":2}', matchPercentage: 71.43 }  
 ```
 
 ### Compare Array Places
@@ -63,7 +61,9 @@ const { compareArrayPlaces } = require('similify');
 const array1 = ["apple", "banana"];
 const array2 = ["orange", "banana"];
 
-console.log(compareArrayPlaces(array1, 0, array2, 1));
+const result = compareArrayPlaces(array1, 0, array2, 1);
+console.log(result);
+// Output: { mostSimilar: 'banana', matchPercentage: 71.43 }  
 ```
 
 ### Compare Word to Array
@@ -74,7 +74,9 @@ const { compareWordToArray } = require('similify');
 const word = "apple";
 const array = ["orange", "banana", "grape"];
 
-console.log(compareWordToArray(word, array));
+const result = compareWordToArray(word, array);
+console.log(result);
+// Output: { mostSimilar: 'grape', matchPercentage: 57.14 }  
 ```
 
 ### Compare Arrays
@@ -85,7 +87,9 @@ const { compareArrays } = require('similify');
 const array1 = ["apple", "banana"];
 const array2 = ["orange", "banana", "grape"];
 
-console.log(compareArrays(array1, array2));
+const result = compareArrays(array1, array2);
+console.log(result);
+// Output: { mostSimilar: ['banana'], matchPercentage: 66.67 }  
 ```
 
 ### Compare String Length
@@ -93,7 +97,9 @@ console.log(compareArrays(array1, array2));
 ```javascript
 const { compareStringLength } = require('similify');
 
-console.log(compareStringLength("apple", "orange"));
+const result = compareStringLength("apple", "orange");
+console.log(result);
+// Output: { longerString: 'orange', lengthDifference: 1 }  
 ```
 
 ### Compare Number to Range
@@ -101,7 +107,9 @@ console.log(compareStringLength("apple", "orange"));
 ```javascript
 const { compareNumberToRange } = require('similify');
 
-console.log(compareNumberToRange(25, 20, 30));
+const result = compareNumberToRange(25, 20, 30);
+console.log(result);
+// Output: { withinRange: true, deviationFromMidpoint: 2.5 }  
 ```
 
 ## Below are explanations for each function provided by the Similify package:
